@@ -4,6 +4,9 @@ window.SpaApp = {
   Views: {},
   Routers: {},
   initialize: function() {
+    // Holds all that needs initializing
+    SpaApp.router = new SpaApp.Routers.TodosRouter();
+    Backbone.history.start({pushState: true});
     // this code obviously belongs in a model or collection
     // but, we're not talking about models or collections just yet :)
     $.get("/todos.json").done(function (data) {

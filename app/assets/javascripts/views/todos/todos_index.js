@@ -4,7 +4,7 @@ SpaApp.Views.TodosIndex = Backbone.View.extend({
   template: HandlebarsTemplates['todos/index'],
 
   events: {
-    'submit #addTodo':                'add'
+    'submit #addTodo': 'add'
   },
 
   render: function() {
@@ -24,6 +24,7 @@ SpaApp.Views.TodosIndex = Backbone.View.extend({
     
     var newTodo = {
       title: $("#todo_title").val(),
+      description: $("#todo_description").val(),
       completed: false
     };
 
