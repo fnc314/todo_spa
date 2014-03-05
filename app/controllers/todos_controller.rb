@@ -7,7 +7,7 @@ class TodosController < ApplicationController
   end
 
   def create
-    todo_params = params.require(:todo).permit(:title, :completed)
+    todo_params = params.require(:todo).permit(:title, :completed, :description)
     @todo = Todo.create(todo_params)
 
     respond_to do |f|
