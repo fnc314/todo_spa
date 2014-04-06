@@ -1,3 +1,8 @@
+Description
+===
+
+Building a JavaScript app using a Rails back-end.  The app was a lab exercise for General Assembly's Web Development Immersive.  Using JavaScript and Rails we created a simple interface for creating a list of activites and a way to manage (delete/edit) the list.  The app is not styled.
+
 
 
 # SPA App
